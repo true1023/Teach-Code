@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Component Demo</title>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="js/component.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!--
+            <button-counter></button-counter>
+            <button @click="currentTabComponent='temp1'">1</button>
+            <button @click="currentTabComponent='temp2'">2</button>
+            <button @click="currentTabComponent='temp3'">3</button>
+            <component v-bind:is="currentTabComponent"></component>
+            -->
+            <comp1></comp1>
+
+        </div>
+    </body>
+</html>
+<script>
+    new Vue({
+        el: '#app',
+        data:{
+            currentTabComponent:'temp1'
+        },
+        components:{
+            comp1,
+        },
+    })
+</script>
